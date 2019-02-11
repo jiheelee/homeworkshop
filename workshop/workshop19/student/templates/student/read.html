@@ -1,0 +1,9 @@
+{% extends 'student/base.html' %}
+{% block bodyblock %}
+    <h1>{{student.name}}</h1>
+    <h3>{{student.email}}</h3>
+    <h3>{{student.birthday}}</h3>
+    <h3>{{student.age}}</h3>
+    <a href="/student/{{student.id}}/edit">수정하기</a>
+    <a href="/student/{{student.id}}/delete">삭제하기</a>
+{% endblock %}
